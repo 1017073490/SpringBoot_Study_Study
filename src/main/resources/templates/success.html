@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!--thymeleaf模板，详细可以面向文档编程-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>成功</title>
+</head>
+<body>
+    <div th:text="${A}">兴盛！</div>
+    <div th:utext="${A}">兴盛！</div>
+    <h4 th:text="${B}">繁荣！</h4>
+    <h2 th:text="${l}" th:each="l : ${L}"></h2>
+    <hr/>
+    <h2>
+        <span th:each="l : ${L}"> [[${l}]] </span>
+    </h2>
+    <div th:text="${#locale.country}"></div>
+
+</body>
+</html>
