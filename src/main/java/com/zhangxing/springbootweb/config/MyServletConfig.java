@@ -1,6 +1,6 @@
 package com.zhangxing.springbootweb.config;
 
-import com.zhangxing.listener.MyListener;
+import com.zhangxing.springbootweb.listener.MyListener;
 import com.zhangxing.springbootweb.filter.MyFilter;
 import com.zhangxing.springbootweb.servlet.MyServlet;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
@@ -11,7 +11,6 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.servlet.Servlet;
 import java.util.Arrays;
 
 /**
